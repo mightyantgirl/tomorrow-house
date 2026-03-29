@@ -70,6 +70,22 @@
         margin-left: 4px;
       }
     }
+
+    .gnb-auth {
+      margin-right: 8px;
+
+      a {
+        @include text-style(14, $secondary);
+        font-weight: 700;
+
+        &:first-child {
+          margin-right: 8px;
+        }
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
   }
 
   //desktop

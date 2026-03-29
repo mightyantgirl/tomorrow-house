@@ -1256,6 +1256,22 @@ i {
   .gnb .btn-primary i {
     margin-left: 4px;
   }
+  .gnb .gnb-auth {
+    margin-right: 8px;
+  }
+  .gnb .gnb-auth a {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #8c8d96;
+    font-weight: 700;
+  }
+  .gnb .gnb-auth a:first-child {
+    margin-right: 8px;
+  }
+  .gnb .gnb-auth a:hover {
+    color: #3da5f5;
+  }
 }
 @media screen and (min-width: 1280px) {
   .gnb-right .input-group {
