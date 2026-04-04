@@ -1705,6 +1705,17 @@ i {
   overflow-y: auto;
   z-index: 20;
   overscroll-behavior: contain;
+  -webkit-transform: translate3d(-240px, 0, 0);
+          transform: translate3d(-240px, 0, 0);
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+}
+
+.sidebar.is-active {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 .sidebar-header {
@@ -1845,5 +1856,14 @@ i {
   z-index: 10;
   height: 100vh;
   background-color: rgba(63, 65, 80, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
+}
+
+.overlay.is-active {
+  opacity: 1;
+  visibility: visible;
 }
 /*# sourceMappingURL=main.css.map */

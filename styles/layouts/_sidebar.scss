@@ -1,16 +1,23 @@
 .sidebar {
+  $sidebar-width: 240px; //사이드바 가로 폭 변수
+
   position: fixed;
   top: 0;
   left: 0;
   //   화면에서 왼쪽 위에 고정시킴
   height: 100vh;
-  width: 240px;
+  width: $sidebar-width;
   padding: 32px 20px;
   background-color: $white;
   overflow-y: auto;
   z-index: $sidebar-level;
   overscroll-behavior: contain; //뒷 요소가 오버스크롤 되지 않게 막아줌
+  transform: translate3d(-$sidebar-width, 0, 0); // x축을 기준으로 화면에서 이동시킴.
+  transition: transform 200ms ease-in-out;
 
+  &.is-active {
+    transform: translate3d(0, 0, 0); // 원상태
+  }
   &-header {
     padding: 0 12px;
 
