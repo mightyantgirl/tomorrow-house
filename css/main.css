@@ -1436,14 +1436,17 @@ i {
   }
 }
 
-body {
-  background-color: black;
-}
-
 .sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
   width: 240px;
   padding: 32px 20px;
   background-color: #fff;
+  overflow-y: auto;
+  z-index: 20;
+  overscroll-behavior: contain;
 }
 .sidebar-header {
   padding: 0 12px;
@@ -1520,6 +1523,19 @@ body {
 }
 .sidebar-user-menu .user-menu-item a:active {
   color: #3da5f5;
+}
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  height: 100vh;
+  background-color: rgba(63, 65, 80, 0.5);
 }
 
 /*# sourceMappingURL=main.css.map */
