@@ -1,6 +1,6 @@
 .drawer-menu {
   $drawer-menu-item-height: 36px;
-  $drawer-menu-list-padding: 8px;
+  $drawer-menu-list-padding: 20px;
   $community-length: 8;
   $store-length: 9;
   $expert-length: 2;
@@ -33,6 +33,7 @@
         max-height: _max-content-height($expert-length);
       }
     }
+
     .drawer-menu-button .ic-chevron {
       transform: translateY(-50%) rotate(180deg);
     }
