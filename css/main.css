@@ -1052,6 +1052,14 @@ i {
   display: block;
   object-fit: cover;
 }
+.my-menu.is-active .my-menu-button {
+  border-color: #3da5f5;
+}
+.my-menu.is-active .my-menu-content {
+  visibility: visible;
+  opacity: 1;
+  transform: translate3d(-50%, 0, 0);
+}
 .my-menu-content {
   position: absolute;
   left: 50%;
@@ -1059,6 +1067,10 @@ i {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.18);
   border-radius: 4px;
   top: 52px;
+  visibility: hidden;
+  opacity: 0;
+  transform: translate3d(-50%, -10px, 0);
+  transition: transform 100ms ease-in-out, visibility 100ms ease-in-out, opacity 100ms ease-in-out;
 }
 .my-menu-content::before, .my-menu-content::after {
   position: absolute;
