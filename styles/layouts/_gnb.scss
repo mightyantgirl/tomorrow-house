@@ -90,10 +90,31 @@
 
   //desktop
   @include responsive(D) {
-    &-right {
-      .input-group {
-        width: 264px;
-        margin-right: 24px;
+    &-search {
+      position: relative;
+
+      width: 264px;
+      margin-right: 24px;
+
+      .search-history {
+        position: absolute;
+        left: 0;
+        top: calc(100% + 8px); //서로 단순연산이 되지 않는 단위들을 계산해주는 함수
+        width: 100%;
+        background-color: $white;
+        padding: 16px 8px 8px 8px;
+        border: 1px solid $border;
+        border-radius: 4px;
+        box-shadow: $dropdown-shadow;
+        display: none;
+
+        &.is-active {
+          display: block;
+        }
+
+        &-header {
+          padding: 0 8px;
+        }
       }
     }
   }

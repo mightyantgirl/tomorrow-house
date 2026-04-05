@@ -1782,9 +1782,29 @@ i {
 }
 
 @media screen and (min-width: 1280px) {
-  .gnb-right .input-group {
+  .gnb-search {
+    position: relative;
     width: 264px;
     margin-right: 24px;
+  }
+  .gnb-search .search-history {
+    position: absolute;
+    left: 0;
+    top: calc(100% + 8px);
+    width: 100%;
+    background-color: #fff;
+    padding: 16px 8px 8px 8px;
+    border: 1px solid #e0e2e7;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.18);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.18);
+    display: none;
+  }
+  .gnb-search .search-history.is-active {
+    display: block;
+  }
+  .gnb-search .search-history-header {
+    padding: 0 8px;
   }
 }
 
