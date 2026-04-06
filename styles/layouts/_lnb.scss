@@ -1,9 +1,13 @@
 .lnb {
   overflow-x: auto;
 
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
   &-list {
     @include flexbox(start);
-    width: max-content;
+    width: 100vw;
     position: relative;
     height: 40px;
     margin-left: -15px;
@@ -37,29 +41,22 @@
   }
 
   @include responsive(T) {
-    &-list {
-      @include flexbox(start);
-      @include text-style(14, $primary);
+    border-bottom: 1px solid $border;
+    overflow-x: visible;
+    height: 50px;
 
-      height: 50px;
+    &-list {
+      height: auto;
+      padding: 0;
+      margin-left: 0;
+      border-bottom: 0;
     }
 
     &-item {
-      padding: 0 8px;
+      a {
+        @include text-style(14);
+        height: 50px;
+      }
     }
-  }
-
-  @include responsive(D) {
-    &-list {
-      @include flexbox(start);
-      @include text-style(14, $primary);
-    }
-
-    &-item {
-    }
-  }
-
-  &::-webkit-scrollbar {
-    display: none;
   }
 }
