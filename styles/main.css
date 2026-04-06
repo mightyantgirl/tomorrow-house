@@ -1872,6 +1872,10 @@ i {
   border-bottom: 2px solid transparent;
 }
 
+.lnb-item a:hover {
+  color: #3da5f5;
+}
+
 .lnb-item i {
   color: #f86d7d;
 }

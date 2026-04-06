@@ -33,6 +33,10 @@
       padding: 0 8px;
       height: 40px;
       border-bottom: 2px solid transparent;
+
+      &:hover {
+        color: $blue;
+      }
     }
 
     i {
