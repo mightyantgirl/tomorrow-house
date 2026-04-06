@@ -1197,6 +1197,7 @@ i {
 
 .my-menu {
   position: relative;
+  z-index: 40;
 }
 
 .my-menu-button {
@@ -1416,6 +1417,10 @@ i {
   font-size: 16px;
   position: relative;
   top: 1px;
+}
+
+.search-history {
+  z-index: 40;
 }
 
 .search-history-header {
@@ -1806,6 +1811,111 @@ i {
   .gnb-search .search-history-header {
     padding: 0 8px;
   }
+}
+
+.lnb {
+  overflow-x: auto;
+}
+
+.lnb-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: relative;
+  height: 40px;
+  margin-left: -15px;
+  padding-left: 8px;
+  border-bottom: 1px solid #e0e2e7;
+}
+
+.lnb-item {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+.lnb-item.is-active a {
+  color: #3da5f5;
+  border-bottom: 2px solid #3da5f5;
+}
+
+.lnb-item a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: #191a20;
+  font-weight: 700;
+  padding: 0 8px;
+  height: 40px;
+  border-bottom: 2px solid transparent;
+}
+
+.lnb-item i {
+  color: #f86d7d;
+}
+
+@media screen and (min-width: 768px) {
+  .lnb-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #3f4150;
+    height: 50px;
+  }
+  .lnb-item {
+    padding: 0 8px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .lnb-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #3f4150;
+  }
+}
+
+.lnb::-webkit-scrollbar {
+  display: none;
 }
 
 .sidebar {

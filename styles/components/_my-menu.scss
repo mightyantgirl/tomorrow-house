@@ -3,6 +3,8 @@
   $tooltip-size: 12px;
   position: relative;
 
+  z-index: $my-menu-level;
+
   &-button {
     width: $button-size;
     height: $button-size;

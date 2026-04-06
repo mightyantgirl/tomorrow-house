@@ -1,0 +1,65 @@
+.lnb {
+  overflow-x: auto;
+
+  &-list {
+    @include flexbox(start);
+    width: max-content;
+    position: relative;
+    height: 40px;
+    margin-left: -15px;
+    padding-left: 8px;
+    border-bottom: 1px solid $border;
+  }
+
+  &-item {
+    flex-shrink: 0;
+    flex-grow: 0;
+
+    &.is-active {
+      a {
+        color: $blue;
+        border-bottom: 2px solid $blue;
+      }
+    }
+
+    a {
+      @include inline-flexbox;
+      @include text-style(13, $dark);
+      font-weight: 700;
+      padding: 0 8px;
+      height: 40px;
+      border-bottom: 2px solid transparent;
+    }
+
+    i {
+      color: $red;
+    }
+  }
+
+  @include responsive(T) {
+    &-list {
+      @include flexbox(start);
+      @include text-style(14, $primary);
+
+      height: 50px;
+    }
+
+    &-item {
+      padding: 0 8px;
+    }
+  }
+
+  @include responsive(D) {
+    &-list {
+      @include flexbox(start);
+      @include text-style(14, $primary);
+    }
+
+    &-item {
+    }
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

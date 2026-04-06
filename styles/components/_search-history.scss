@@ -1,5 +1,6 @@
 .search-history {
   $close-button-size: 32px;
+  z-index: $search-history-level;
 
   &-header {
     @include flexbox(between);
