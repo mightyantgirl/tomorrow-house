@@ -1498,6 +1498,64 @@ i {
   color: #b2b3b9;
 }
 
+.breadcrumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: 10px 0;
+}
+
+.breadcrumb a {
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: #8c8d96;
+}
+
+.breadcrumb a a:active {
+  opacity: 0.4;
+}
+
+.breadcrumb .ic-chevron {
+  display: inline-block;
+  font-size: 13px;
+  color: #b2b3b9;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  margin: 0 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .breadcrumb {
+    padding: 16px 0;
+  }
+  .breadcrumb a {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+  }
+  .breadcrumb .ic-chevron {
+    margin: 0 4px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .breadcrumb {
+    padding: 23px 0 40px 0;
+  }
+  .breadcrumb a:hover {
+    opacity: 0.4;
+  }
+}
+
 /*
 * mobile (<768px) -------
 * fixture ------- sm
@@ -1833,9 +1891,7 @@ i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  width: 100vh;
   position: relative;
   height: 40px;
   margin-left: -15px;

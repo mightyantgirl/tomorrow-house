@@ -8,7 +8,7 @@
 
   &-list {
     @include flexbox(start);
-    width: max-content;
+    width: 100vh;
     position: relative;
     height: 40px;
     margin-left: -15px;
