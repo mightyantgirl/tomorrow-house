@@ -2,8 +2,6 @@ scss_files: '**/*.scss'
 
 severity: warning
 
-property-sort-order: 0
-
 linters:
   BorderZero:
     enabled: true
@@ -91,7 +89,7 @@ linters:
     prefix: _
 
   PropertySortOrder:
-    enabled: true
+    enabled: false
     order: recess
     ignore_unspecified: false
     min_properties: 2

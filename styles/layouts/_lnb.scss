@@ -1,5 +1,6 @@
 .lnb {
   overflow-x: auto;
+  background-color: $white;
 
   &::-webkit-scrollbar {
     display: none;
@@ -7,7 +8,7 @@
 
   &-list {
     @include flexbox(start);
-    width: 100vw;
+    width: max-content;
     position: relative;
     height: 40px;
     margin-left: -15px;

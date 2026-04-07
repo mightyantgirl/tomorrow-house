@@ -12,7 +12,6 @@
   "description": "",
   "devDependencies": {
     "prettier": "^3.8.1",
-    "sass": "^1.97.3",
-    "sass-lint": "^1.13.1"
+    "sass": "^1.97.3"
   }
 }
