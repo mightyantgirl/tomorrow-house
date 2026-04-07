@@ -1197,7 +1197,7 @@ i {
 
 .my-menu {
   position: relative;
-  z-index: 40;
+  z-index: 400;
 }
 
 .my-menu-button {
@@ -1420,7 +1420,7 @@ i {
 }
 
 .search-history {
-  z-index: 40;
+  z-index: 400;
 }
 
 .search-history-header {
@@ -1913,7 +1913,7 @@ i {
   padding: 32px 20px;
   background-color: #fff;
   overflow-y: auto;
-  z-index: 20;
+  z-index: 200;
   overscroll-behavior: contain;
   -webkit-transform: translate3d(-240px, 0, 0);
           transform: translate3d(-240px, 0, 0);
@@ -2063,7 +2063,7 @@ i {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 100;
   height: 100vh;
   background-color: rgba(63, 65, 80, 0.5);
   opacity: 0;
@@ -2084,7 +2084,7 @@ i {
   width: 100%;
   height: 100vh;
   background-color: #fff;
-  z-index: 30;
+  z-index: 300;
   padding: 12px 0;
   -webkit-transform: translate3d(100%, 0, 0);
           transform: translate3d(100%, 0, 0);
@@ -2145,10 +2145,12 @@ i {
 }
 
 .global-header .gnb {
+  z-index: 50;
   top: 0;
 }
 
 .global-header .lnb {
+  z-index: 40;
   top: 50px;
 }
 
