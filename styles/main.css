@@ -1556,6 +1556,16 @@ i {
   }
 }
 
+.product-carousel-thumbnail {
+  display: none;
+}
+
+.product-carousel img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /*
 * mobile (<768px) -------
 * fixture ------- sm
