@@ -10,36 +10,35 @@
   &-thumbnail {
     @include pos-center-x;
     bottom: 16px;
+  }
 
-    .thumbnail {
-      &-list {
-        @include flexbox;
+  .thumbnail-list {
+    @include flexbox;
+  }
+
+  .thumbnail-item {
+    @include flexbox;
+
+    button {
+      margin: 0 4px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: $white;
+      opacity: 0.7;
+      transition: transform 200ms ease-in-out;
+    }
+
+    &.tns-nav-active {
+      button {
+        transform: scale(1.333333);
+
+        opacity: 1;
       }
-      &-item {
-        @include flexbox;
+    }
 
-        button {
-          margin: 0 4px;
-          width: 6px;
-          height: 6px;
-          border-radius: 50%;
-          background-color: $white;
-          opacity: 0.7;
-          transition: transform 200ms ease-in-out;
-        }
-
-        &.tns-nav-active {
-          button {
-            transform: scale(1.333333);
-
-            opacity: 1;
-          }
-        }
-
-        img {
-          display: none;
-        }
-      }
+    img {
+      display: none;
     }
   }
 
@@ -47,5 +46,47 @@
     display: block;
     width: 100%;
     height: auto;
+  }
+
+  @include responsive(T) {
+    margin-right: 30px;
+
+    &-slider {
+      border-radius: 4px;
+      overflow: hidden;
+      margin: 0 0 8px 0;
+    }
+
+    &-thumbnail {
+      position: static;
+      transform: none;
+    }
+
+    .thumbnail-list {
+      justify-content: flex-start;
+    }
+
+    .thumbnail-item {
+      margin: 0 8px 0 0;
+
+      button {
+        opacity: 1;
+        width: 56px;
+        height: 56px;
+        border-radius: 4px;
+        overflow: hidden;
+      }
+
+      &.tns-nav-active {
+        button {
+          transform: none;
+          border: 2px solid $blue;
+        }
+      }
+
+      img {
+        display: block;
+      }
+    }
   }
 }
