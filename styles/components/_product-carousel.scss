@@ -79,6 +79,7 @@
 
       &.tns-nav-active {
         button {
+          @include flexbox(center);
           transform: none;
           border: 2px solid $blue;
         }
@@ -86,6 +87,7 @@
 
       img {
         display: block;
+        width: 56px;
       }
     }
   }
