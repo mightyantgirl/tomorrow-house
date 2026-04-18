@@ -1675,6 +1675,47 @@ i {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .product-carousel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .product-carousel-slider {
+    width: 500px;
+    height: 500px;
+  }
+  .product-carousel-thumbnail {
+    margin-right: 8px;
+  }
+  .product-carousel .thumbnail-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .product-carousel .thumbnail-item {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+  .product-carousel .thumbnail-item button,
+  .product-carousel .thumbnail-item img {
+    margin: 0;
+    width: 75px;
+    height: 75px;
+  }
+}
+
 /*
 * mobile (<768px) -------
 * fixture ------- sm
